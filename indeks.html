@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+
+    // Tutup menu setelah klik link (HP)
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+        });
+    });
+</script>
+<body>
+    <nav>
+    <div class="nav-content">
+        <div class="nav-logo">
+            <a href="">PHOENITCLASS</a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#Beranda">Beranda</a></li>
+                <li><a href="#Tentang">Tentang</a></li>
+                <li><a href="#Struktur">Struktur</a></li>
+                <li><a href="#Album">Album</a></li>
+                <li><a href="#Anggota">Anggota</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="Beranda">
+            <img src="logo.jpeg" width="70%">
+            <div class="Kolom">
+                <p class="Deskripsi"></p>
+                <h2>PHOENIT SOLID</h2>
+            </div>
+        </section>
+
+        <!--untuk cources-->
+        <section id="Tentang">
+            <img src="yb.jpeg" width="80%">
+            <div class="kolom">
+                <p class="deskripsi"></p>
+                <h2>Tentang kami</h2>
+                <p>PHOENITCLASS adalah komunitas siswa kelas XII MIPA 3 yang menjunjung tinggi semangat kebersamaan, kreativitas, dan prestasi. Kami hadir sebagai ruang untuk tumbuh, belajar, dan saling mendukung dalam mengembangkan potensi akademik maupun nonakademik.
+Dengan latar belakang minat yang beragam, kami percaya bahwa kerja sama, solidaritas, dan rasa tanggung jawab adalah kunci dalam membangun kelas yang solid dan berprestasi. Melalui kebersamaan, kami berusaha menciptakan lingkungan belajar yang positif, inspiratif, dan menyenangkan.
+PHOENITCLASS bukan sekadar sebuah kelas, tetapi sebuah keluarga yang siap melangkah maju, menghadapi tantangan, dan meraih masa depan bersama..</p>
+                <p><a href="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+        </section>
+        <!--untuk tutor-->
+        <section id="Struktur">
+            <div class="tengah">
+                <div class="row">
+                    <h2>Struktur kelas</h2>
+                </div>
+
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="yunik.jpeg"/>
+                        <p>Wali Kelas</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="macuz.JPG"/>
+                        <p>Ketua Kelas</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="sat.jpeg">
+                        <p>Wakil Ketua</p>
+                    </div>
+                     <div class="kartu-tutor">
+                        <img src="firda.JPG">
+                        <p>Bendahara 1</p>
+                    </div>
+                     <div class="kartu-tutor">
+                        <img src="tik.jpeg">
+                        <p>Bendahara 2</p>
+                    </div>
+                     <div class="kartu-tutor">
+                        <img src="yesha.JPG">
+                        <p>Sekretaris 1</p>
+                    </div>
+                     <div class="kartu-tutor">
+                        <img src="habibah.JPG">
+                        <p>Sekretaris 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--untuk album-->
+        <section id="Album">
+            <div class="tengah">
+                <div class="row">
+                    <h2>Album Kelas</h2>
+                    <div>
+
+                    <div class="album-list">
+                        <div class="album-tutor">
+                            <img src="membaca.jpeg">
+                            <p>Lomba Gelora</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="sastra.jpeg">
+                            <p>Lomba Hari Guru 2025</p>        
+                        </div>
+                        <div class="album-tutor">
+                            <img src="yb">
+                            <p>Yearbook</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="BATIK.jpg">
+                            <p>HARI BATIK</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="IDUL ADHA.jpg">
+                            <p>IDUL ADHA</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="KALENDER.jpg">
+                            <p>FOTO KALENDER</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="P5.jpg">
+                            <p>P5</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="PPL.jpg">
+                            <p>PPL MAJAPAHIT</p>
+                        </div>
+                        <div class="album-tutor">
+                            <img src="RUJAK.jpg">
+                            <p>RUJAKAN</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <!--untuk anggota-->
+        <section id="Anggota">
+            <div class="tengah">
+                <div class="row">
+                    <h2>Anggota Kelas</h2>
+                    <div>
+                        
+                    <div class="anggota-list">
+                        <div class="anggota-tutor">
+                            <img src="bintang.JPG">
+                            <p>ADE BINTANG PERMANA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="yesha.JPG">
+                            <p>AEYESHA SHAFINA NINGGARA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="agfa.JPG">
+                            <p>AGFA BIHUWA AHSAN</p>
+                        </div>
+                         <div class="anggota-tutor">
+                            <img src="akbar.JPG">
+                            <p>AKHMAD AKBAR</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="alpat.JPG">
+                            <p>ALFATH APRILLIAN NUR SYAFAAT</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="an.jpeg">
+                            <p>ANDREW WINATA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="angger.JPG">
+                            <p>ANGGER DWI HARDIYANTI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="firda.JPG">
+                            <p>ANNISA' QOTRUNNADA ALFIRDAUS</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="cici.JPG">
+                            <p>CINTA RAHMA ZHIYA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="freco.JPG">
+                            <p>DAFINCI PINTRA FREECO YUNIOR</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="dep.jpeg">
+                            <p>DEVI WAHYU FITTRIANI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="dwi.JPG">
+                            <p>DWI RIZQI MAHARANI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="tik.jpeg">
+                            <p>ETIK APRIANI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="frista.JPG">
+                            <p>FRISTA AULIA VERTIKA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="in.jpeg">
+                            <p>IIN INAYAH HARYANTI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="intan.JPG">
+                            <p>INTAN CAHAYA APRILIA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="kennisa.JPG">
+                            <p>KENNISA FAJAR UTAMI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="kepin.JPG">
+                            <p>KEVIN ALEXAVA CHINSY</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="macuz.JPG">
+                            <p>MAKHRUS ALY SYARIFUL HIDAYAH</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="fahri.jpeg">
+                            <p>MUHAMMAD FAHRI ANDRIAN</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="fairuz.JPG">
+                            <p>MAULIDINA FAIRUZ AZKHIA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="fatih.JPG">
+                            <p>MUHAMMAD AINNUR FATIQHIN</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="fatah.JPG">
+                            <p>MUHAMMAD KHOIRUL FATAH</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="rafi.JPG">
+                            <p>MUHAMMAD RAFI BASSAM AZIZI</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="fidho.JPG">
+                            <p>MUSLIKHATUN KHAFIDHO</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="nacha.JPG">
+                            <p>NACHA AGUSTIN NISA UL KHOIROH</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="eva.JPG">
+                            <p>NAILA DEA REVALINA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="habibah.JPG">
+                            <p>NUR HABIBATUR ROHMAH</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="ragiel.JPG">
+                            <p>RAGIEL PUTRO SADEWO</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="tania.JPG">
+                            <p>RAHMA INTANIA MAUDHUA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="razak.JPG">
+                            <p>RAZAK AFFADILLAH</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="risma.JPG">
+                            <p>RISMA PUTRI FINASIH</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="sat.jpeg">
+                            <p>SATRIA LUCKY KRISTIANTO</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="shafa.JPG">
+                            <p>SHAFA ALIFAH AULIA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="windy.JPG">
+                            <p>SYAFA WINDI AULIA</p>
+                        </div>
+                        <div class="anggota-tutor">
+                            <img src="widya.JPG">
+                            <p>WIDYA ROSA AMELIA SUPRAPTO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--untuk kontak-->
+        <section id="kontak">
+            <div class="wrapper">
+                <div class="footer">
+                    <div class="footer-kontak">
+                        <h2>Kontak</h>
+                        <pre>
+                           <a href="https://www.instagram.com/phoenitclassmipa3?igsh=Z21tMWxuN3c3bmpo"style="color:rgb(10,10,1o)"><i class=""> IG.Phoenitclass</i></a>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
